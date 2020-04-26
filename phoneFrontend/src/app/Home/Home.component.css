@@ -1,0 +1,35 @@
+.homeContainer{
+    width:100vw;
+    height:100vh;
+}
+
+.centerTitle{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.centerDescription{
+    text-align: center;
+    font-size:18px;
+}
+
+.form-group{
+    text-align: right;
+}
+
+.form-control{
+    width:18%;
+    line-height:20px;
+    margin-top:20px;
+    margin-right:41%;
+}
+
+.generateBtn{
+    margin-left:47%;
+}
+
+.generateDescription{
+    text-align: center;
+    font-size:18px;
+}

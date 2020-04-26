@@ -1,0 +1,27 @@
+.homeContainer{
+    width:100vw;
+    height:100vh;
+}
+
+.backBtn{
+    margin-left:44%;
+}
+.centerTitle{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.combosDisplay{
+    text-align: center;
+    font-size:18px;
+}
+
+.lines{
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.alphaNumber{
+    font-size: 13px;
+}

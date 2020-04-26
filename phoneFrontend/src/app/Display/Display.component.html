@@ -1,0 +1,72 @@
+<div class="homeContainer">
+    <h1 class="centerTitle">Generated alphanumeric numbers for: {{inputNumber}}</h1>
+    <button type="button" class="backBtn" (click)="back()">Generate another number</button>
+    <p class="combosDisplay">Total Combinations: {{totalCombos}}</p>
+    <p class="combosDisplay">Current Page: {{currentPage}}</p>
+
+    <div class="alphaDisplay">
+        <div class="lines">
+            <span class="alphaNumber" *ngFor="let alpha of NumberArray | slice:0:25">"{{alpha.alphaNumber}}", </span>
+        </div>
+        <div class="lines">
+            <span class="alphaNumber" *ngFor="let alpha of NumberArray | slice:25:51">"{{alpha.alphaNumber}}", </span>
+        </div>
+        <div class="lines">
+            <span class="alphaNumber" *ngFor="let alpha of NumberArray | slice:51:77">"{{alpha.alphaNumber}}", </span>
+        </div>
+        <div class="lines">
+            <span class="alphaNumber" *ngFor="let alpha of NumberArray | slice:77:103">"{{alpha.alphaNumber}}", </span>
+        </div>
+        <div class="lines">
+            <span class="alphaNumber" *ngFor="let alpha of NumberArray | slice:103:129">"{{alpha.alphaNumber}}", </span>
+        </div>
+        <div class="lines">
+            <span class="alphaNumber" *ngFor="let alpha of NumberArray | slice:129:155">"{{alpha.alphaNumber}}", </span>
+        </div>
+        <div class="lines">
+            <span class="alphaNumber" *ngFor="let alpha of NumberArray | slice:155:181">"{{alpha.alphaNumber}}", </span>
+        </div>
+        <div class="lines">
+            <span class="alphaNumber" *ngFor="let alpha of NumberArray | slice:181:207">"{{alpha.alphaNumber}}", </span>
+        </div>
+        <div class="lines">
+            <span class="alphaNumber" *ngFor="let alpha of NumberArray | slice:207:233">"{{alpha.alphaNumber}}", </span>
+        </div>
+        <div class="lines">
+            <span class="alphaNumber" *ngFor="let alpha of NumberArray | slice:233:259">"{{alpha.alphaNumber}}", </span>
+        </div>
+        <div class="lines">
+            <span class="alphaNumber" *ngFor="let alpha of NumberArray | slice:259:285">"{{alpha.alphaNumber}}", </span>
+        </div>
+        <div class="lines">
+            <span class="alphaNumber" *ngFor="let alpha of NumberArray | slice:285:311">"{{alpha.alphaNumber}}", </span>
+        </div>
+        <div class="lines">
+            <span class="alphaNumber" *ngFor="let alpha of NumbersArray | slice:311:337">"{{alpha.alphaNumber}}", </span>
+        </div>
+        <div class="lines">
+            <span class="alphaNumber" *ngFor="let alpha of NumberArray | slice:337:363">"{{alpha.alphaNumber}}", </span>
+        </div>
+        <div class="lines">
+            <span class="alphaNumber" *ngFor="let alpha of NumberArray | slice:363:389">"{{alpha.alphaNumber}}", </span>
+        </div>
+        <div class="lines">
+            <span class="alphaNumber" *ngFor="let alpha of NumberArray | slice:389:415">"{{alpha.alphaNumber}}", </span>
+        </div>
+        <div class="lines">
+            <span class="alphaNumber" *ngFor="let alpha of NumberArray | slice:415:441">"{{alpha.alphaNumber}}", </span>
+        </div>
+        <div class="lines">
+            <span class="alphaNumber" *ngFor="let alpha of NumberArray | slice:441:467">"{{alpha.alphaNumber}}", </span>
+        </div>
+        <div class="lines">
+            <span class="alphaNumber" *ngFor="let alpha of NumberArray | slice:467:500">"{{alpha.alphaNumber}}", </span>
+        </div>
+        <br/>
+        <span>Pages: </span>
+        <span *ngFor="let page of pagesArray">
+            <span (click)="goToPage(page)">{{page}} </span>
+            <span>,</span>
+        </span>
+    </div>
+    </div>

@@ -1,0 +1,17 @@
+<div class="homeContainer">
+<h1 class="centerTitle">Numeric to Alphanumeric Phone Number Generator</h1>
+<h1 class="centerDescription">Enter a numeric phone number of 7 or 10 digits, to generate a list of alphanumeric combinations for the given number!</h1>
+<form (ngSubmit)="onSubmit(generateForm)" #generateForm="ngForm">
+    <div class="form-group">
+        <input type="text" class="form-control" id="number"
+       required
+       [(ngModel)]="number" name="number" placeholder="Number">
+    </div>
+    <br/>
+
+      <button type="submit" class="generateBtn" [disabled]="!generateForm.form.valid">Generate</button>
+</form> 
+<p class="generateDescription" *ngIf="generating">Generating...</p>
+<p class="generateDescription" *ngIf="generating">This may take a while.</p>
+<p class="generateDescription" *ngIf="correctNum">You did not enter a valid number, please enter another one</p>
+</div>
